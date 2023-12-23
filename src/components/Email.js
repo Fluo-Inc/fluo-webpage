@@ -7,10 +7,10 @@ import { MdOutlineMailOutline } from "react-icons/md";
 
 const Email = () => {
     return (
-        <a href="mailto:ask@loca.com" className='email'>
+        <a href="mailto:ask@fluoai.com" className='email'>
             <MdOutlineMailOutline className="email-icon"/>
             <div className="email-address">
-                ask@loca.com
+                ask@fluoai.com
             </div>
         </a>
     );

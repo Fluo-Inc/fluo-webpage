@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-right">
-                2023 Loca AI
+                © 2023 Fluo AI
             </div>
         </div>
     );
