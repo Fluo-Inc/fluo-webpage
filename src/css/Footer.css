@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30%;
+    gap: 5%;
+    color: #787878;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40%;
+    font-size: 1.5rem;
+}
+
+.footer-right {
+    font-size: 1.2rem;
+}
