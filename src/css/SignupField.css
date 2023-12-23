@@ -1,0 +1,43 @@
+.signup-field {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+}
+
+.signup-field-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Adjust border color as needed */
+    border-radius: 5px; /* Rounded corners for the input field */
+    outline: none; 
+    transition: 0.3s ease-in-out; 
+}
+
+.signup-field-input:focus {
+    border: 1px solid #333; /* Add a grey border color when the input is focused */
+}
+
+.signup-field-input::placeholder {
+    color: #888; /* Placeholder text color */
+}
+
+.signup-field-btn {
+    width: 30%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #333; /* Adjust button color as needed */
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    outline: none; /* Removes the default focus outline */
+    transition: 0.3s ease-in-out;
+}
+
+.signup-field-btn:hover {
+    scale: 1.02;
+    background-color: #555; /* Darkens button on hover */
+}

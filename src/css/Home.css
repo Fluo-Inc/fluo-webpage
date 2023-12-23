@@ -1,0 +1,54 @@
+.Home {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: #1B1B1B;
+    text-align: center;
+    margin-bottom: 50%;
+}
+
+
+/* title */
+.home-title {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-title-bold {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+
+.home-title-regular {
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.home-title-description {
+    font-size: 1rem;
+    color: #787878;
+    margin-bottom: 5%;
+}
+
+
+/* sign up field */
+.home-sigup-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+
+/* video player */
+.home-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
