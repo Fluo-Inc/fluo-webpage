@@ -8,15 +8,20 @@ import { SlSocialLinkedin } from "react-icons/sl";
 
 
 const Footer = () => {
+
+    const youtubeUrl = 'https://www.youtube.com/channel/UClsVkZZnwT2nY1Okt4MJTnw';
     return (
         <div className='footer'>
             <div className="footer-left">
                 <div className="footer-icon">
                     <FaXTwitter />
                 </div>
-                <div className="footer-icon">
+                <a  href={youtubeUrl} 
+                    target="_blank"
+                    rel="noreferrer"
+                    className="footer-icon">
                     <AiOutlineYoutube />
-                </div>
+                </a>
                 <div className="footer-icon">
                     <SlSocialLinkedin />
                 </div>

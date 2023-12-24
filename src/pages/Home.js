@@ -15,7 +15,7 @@ const Home = () => {
     const guestParkingUrl = 'https://loca-ai.s3.us-west-1.amazonaws.com/5.+Guest+Parking.mp4';
     const securityUrl = 'https://loca-ai.s3.us-west-1.amazonaws.com/6-security-and-control.mp4';
     const analyticsUrl = 'https://loca-ai.s3.us-west-1.amazonaws.com/4-parking-analytics.mp4';
-    const youtubeVideoId = 'jNDUqBU_gFk';
+    const youtubeVideoId = 'OkDsrH-ciEg';
 
 
     return (

@@ -39,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 .tech-section-title {
@@ -81,6 +81,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 
 .tech-section-bottom {
     display: flex;
@@ -133,6 +134,7 @@
 
 
 
+
 /* AI engine */
 .tech-ai-engine {
     background: #151515;
@@ -141,4 +143,28 @@
 
 .tech-ai-engine .tech-section-top-svg {
     transform: translateY(-10%);
+}
+
+/* Hardwares */
+.tech-hardwares {
+    background: #10212B;
+    color: white;
+}
+
+/* Software */
+.tech-software {
+    background: #2E2743;
+    color: white;
+}
+
+.tech-software .tech-section-top-svg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.tech-software .tech-section-top-svg img {
+    width: 15%;
+    object-fit: cover;
 }
