@@ -29,3 +29,19 @@
 .footer-right {
     font-size: 1.2rem;
 }
+
+
+/*  mobile view */
+@media screen and (max-width: 650px) {
+    .footer-left {
+        gap: 30%;
+    }
+
+    .footer-icon {
+        font-size: 1.2rem;
+    }
+
+    .footer-right {
+        font-size: 1rem;
+    }
+}

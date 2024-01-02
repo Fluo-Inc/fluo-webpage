@@ -55,7 +55,7 @@
     .video-preview {
         width: 100%; /* Adjust as necessary */
         border: none;
-        border-radius: 2rem;
+        border-radius: 0.5rem;
         cursor: pointer;
     }
     

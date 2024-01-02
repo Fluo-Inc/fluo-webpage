@@ -130,11 +130,6 @@
 
 
 
-
-
-
-
-
 /* AI engine */
 .tech-ai-engine {
     background: #151515;
@@ -167,4 +162,36 @@
 .tech-software .tech-section-top-svg img {
     width: 15%;
     object-fit: cover;
+}
+
+
+
+
+/* mobile view */
+@media screen and (max-width: 650px) {
+    .tech-header {
+        width: 90%;
+        margin-bottom: 30%;
+    }
+    .tech-title {
+        font-size: 1.7rem;
+    }
+    .tech-description {
+        font-size: 1rem;
+    }
+
+    .tech-section-title{
+        font-size: 1.3rem;
+    }
+
+
+    .tech-section-top-title {
+        font-size: 1.3rem;
+    }
+    .tech-section-bottom-item-title {
+        font-size: 1.1rem;
+    }
+    .tech-section-top-description {
+        font-size: 0.9rem;
+    }
 }

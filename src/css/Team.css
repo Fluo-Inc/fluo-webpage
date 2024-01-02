@@ -72,11 +72,19 @@
     .team-members {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+
+    .team-title {
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-bottom: 30%;
     }
 
     .team-member-item {
         width: 100%;
         margin-bottom: 20%;
+        align-items: center;
     }
 
     .team-member-item-image {
@@ -101,7 +109,8 @@
 
     .team-member-item-description {
         font-size: 1rem;
+        width: 90%;
         font-weight: 400;
-        line-height: 1.4;
+        line-height: 1.5;
     }
 }
