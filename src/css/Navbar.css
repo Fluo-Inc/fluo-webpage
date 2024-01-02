@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 40%;
+    margin-bottom: 20%;
     gap: 10%;
 }
 
@@ -39,10 +39,12 @@
 
 /* mobile view  */
 @media screen and (max-width: 650px) {
+    .navbar{
+        margin-bottom: 30%;
+    }
     .navbar-link {
         gap: 10%;
     }
-
     .navbar-link-item {
         font-size: 1rem;
     }
