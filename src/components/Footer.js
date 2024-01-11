@@ -10,21 +10,30 @@ import { SlSocialLinkedin } from "react-icons/sl";
 const Footer = () => {
 
     const youtubeUrl = 'https://www.youtube.com/channel/UClsVkZZnwT2nY1Okt4MJTnw';
+    const linkedInUrl = 'https://www.linkedin.com/company/fluoai/';
+    const twitterUrl = 'https://twitter.com/FluoAI';
+
     return (
         <div className='footer'>
             <div className="footer-left">
-                <div className="footer-icon">
+                <a  href={twitterUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="footer-icon">
                     <FaXTwitter />
-                </div>
+                </a>
                 <a  href={youtubeUrl} 
                     target="_blank"
                     rel="noreferrer"
                     className="footer-icon">
                     <AiOutlineYoutube />
                 </a>
-                <div className="footer-icon">
+                <a  href={linkedInUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="footer-icon">
                     <SlSocialLinkedin />
-                </div>
+                </a>
             </div>
             <div className="footer-right">
                 © 2023 Fluo AI
