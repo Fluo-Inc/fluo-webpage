@@ -73,10 +73,10 @@ const Team = () => {
             Kristina (Yanru) Du is a University of Houston alumna currently based 
             in Los Angeles, California. She brings a strong background in enterprise 
             technology solutions, with previous roles as an Enterprise Technology 
-            Solutions Associate and Intern at PwC. Additionally, Kristina has experience 
-            as a Specialist at Apple and participated in the Citi Early ID Leadership 
-            Program in Risk Management. Her passion lies in analytics and using computer 
-            skills to tackle complex business challenges, making her a versatile professional 
+            Solutions Associate and Intern at PwC. Furthermore, Kristina has valuable experience as 
+            a Specialist at Apple, where she excelled in translating intricate technical features 
+            into practical and engaging everyday use cases for consumers.Her passion lies in analytics 
+            and using computer skills to tackle complex business challenges, making her a versatile professional 
             eager to explore new horizons.
             `,
             image: kristina,
