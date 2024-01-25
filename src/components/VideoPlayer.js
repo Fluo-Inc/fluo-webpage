@@ -20,15 +20,24 @@ const VideoPlayer = ({ s3VideoUrl, youtubeVideoId }) => {
   return (
     <div className='video-player'>
       {/* Silent video preview */}
-      <video
-        className="video-preview"
-        src={s3VideoUrl}
-        autoPlay
-        muted
-        // loop
-        playsInline
-        onClick={handlePreviewClick}
-      />
+      <div className="video-preview-container">
+        <video
+          className="video-preview"
+          src={s3VideoUrl}
+          autoPlay
+          muted
+          // loopå
+          playsInline
+          onClick={handlePreviewClick}
+        />
+        {/* Play button */}
+        <div className="video-play-button" onClick={handlePreviewClick}>
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" fill="rgba(0, 0, 0, 0.6)" />
+            <polygon points="35,30 75,50 35,70" fill="#fff" />
+          </svg>
+        </div>
+      </div>
 
       {/* YouTube video popup */}
       {showPopup && (

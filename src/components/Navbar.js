@@ -13,14 +13,15 @@ const Navbar = () => {
             <Link to="/" className="navbar-logo">
                 <img src={logo} alt="logo" />
             </Link>
-            <div className="navbar-link">
-                <Link to='/team' className="navbar-link-item">
+            <div className="navbar-page">
+                <Link to='/team' className="navbar-page-item">
                     Team
                 </Link>
-                <Link to='/technology' className="navbar-link-item">
+                <Link to='/technology' className="navbar-page-item">
                     Technology
                 </Link>
             </div>
+            <div className="navbar-"></div>
         </div>
     );
 };

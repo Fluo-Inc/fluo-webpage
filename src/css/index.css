@@ -39,3 +39,31 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* font */
+.gray {
+  color: #787878;
+}
+
+
+/* effect */
+@keyframes opacity {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
