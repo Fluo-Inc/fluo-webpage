@@ -20,17 +20,17 @@ const Home = () => {
 
     // animation
     const { ref: titleRef, inView: titleInView } = useInView({
-        triggerOnce: false,
+        triggerOnce: true,
         threshold: 0.5,
     });
 
     const { ref: signupRef, inView: signupInView } = useInView({
-        triggerOnce: false,
+        triggerOnce: true,
         threshold: 0.5,
     });
 
     const { ref: featureRef, inView: featureInView } = useInView({
-        triggerOnce: false,
+        triggerOnce: true,
         threshold: 0.1,
     });
 

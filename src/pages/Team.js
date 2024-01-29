@@ -106,7 +106,7 @@ const Team = () => {
 
     // animation
     const { ref: titleRef, inView: titleInView } = useInView({
-        triggerOnce: false,
+        triggerOnce: true,
         threshold: 0.5,
     });
 
