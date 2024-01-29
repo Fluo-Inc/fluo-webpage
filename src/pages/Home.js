@@ -1,4 +1,5 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 // css
 import '../css/Home.css';
@@ -17,11 +18,29 @@ const Home = () => {
     const analyticsUrl = 'https://loca-ai.s3.us-west-1.amazonaws.com/4-parking-analytics.mp4';
     const youtubeVideoId = 'dzrXlkte1Aw';
 
+    // animation
+    const { ref: titleRef, inView: titleInView } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+
+    const { ref: signupRef, inView: signupInView } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+
+    const { ref: featureRef, inView: featureInView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+
+
 
     return (
         <div className='Home'>
             {/* title */}
-            <div className="home-title">
+            <div className={`home-title ${titleInView ? 'bounce-up' : ''}`}
+                 ref={titleRef}>
                 <div className="home-title-bold">
                     Automate
                 </div>
@@ -34,7 +53,8 @@ const Home = () => {
             </div>
 
             {/* signup field */}
-            <div className="home-sigup-field">
+            <div className={`home-sigup-field ${signupInView ? 'bounce-up' : ''}`}
+                 ref={signupRef}>
                     <SignupField />
             </div>
 
@@ -47,10 +67,12 @@ const Home = () => {
             <div className="home-features">
                 <div className="home-features-top">
                     <div className="home-features-item">
-                        <div className="home-features-item-title">
+                        <div className={`home-features-item-title ${featureInView ? 'slide-up' : ''}`}
+                             ref={featureRef}>
                             Streamline
                         </div>
-                        <div className="home-features-item-title">
+                        <div className={`home-features-item-title ${featureInView ? 'slide-up' : ''}`}
+                             ref={featureRef}>
                             Guest Parking
                         </div>
                         <div className="home-features-item-description">
@@ -68,10 +90,12 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="home-features-item">
-                        <div className="home-features-item-title">
+                        <div className={`home-features-item-title ${featureInView ? 'slide-up' : ''}`}
+                             ref={featureRef}>
                             Unauthorized
                         </div>
-                        <div className="home-features-item-title">
+                        <div className={`home-features-item-title ${featureInView ? 'slide-up' : ''}`}
+                             ref={featureRef}>
                             Vehicle Detection
                         </div>
                         <div className="home-features-item-description">

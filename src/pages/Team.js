@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 // css
 import '../css/Team.css';
@@ -102,9 +103,17 @@ const Team = () => {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
+
+    // animation
+    const { ref: titleRef, inView: titleInView } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
+
     return (
         <div className='team'>
-            <div className="team-title">
+            <div className={`team-title ${titleInView ? 'bounce-up' : ''}`}
+                 ref={titleRef}>
                 <p className='gray'>Our leadership.</p>
                 <p>Your team</p>
             </div>
