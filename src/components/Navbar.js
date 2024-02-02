@@ -13,15 +13,23 @@ const Navbar = () => {
             <Link to="/" className="navbar-logo">
                 <img src={logo} alt="logo" />
             </Link>
-            <div className="navbar-page">
-                <Link to='/team' className="navbar-page-item">
-                    Team
-                </Link>
-                <Link to='/technology' className="navbar-page-item">
+            <div className="navbar-link">
+                {/* <Link to='/technology' 
+                      className="navbar-link-item">
+                    Features
+                </Link> */}
+                <Link to='/technology' 
+                       className="navbar-link-item">
                     Technology
                 </Link>
+                <Link to='/team' 
+                      className="navbar-link-item">
+                    Team
+                </Link>
             </div>
-            <div className="navbar-"></div>
+            <Link to="/book-demo" className="navbar-contact">
+                Book a Demo
+            </Link>
         </div>
     );
 };

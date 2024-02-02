@@ -1,0 +1,120 @@
+.book-demo {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-bottom: 10%;
+}
+
+.book-demo::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* title */
+.book-demo-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+.book-demo-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #787878;
+    margin-bottom: 5%;
+}
+
+
+/* form */
+.book-demo-form-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    margin-bottom: 5%;
+    gap: 3%;
+    opacity: 0;
+    transform: translate(20px);
+    animation: slideUp 0.5s forwards;
+    animation-play-state: paused;
+}
+
+.book-demo-form-item input, .book-demo-form-item textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #d1d1d1;
+    font-size: 1.1rem;
+    outline: none; 
+    transition: all 0.2s ease-in-out;
+}
+
+.book-demo-form-item textarea {
+    height: 15vh;
+    font-family: Roboto;
+}
+
+.book-demo-form-item input:focus, .book-demo-form-item textarea:focus {
+    border: 1px solid #000000;
+}
+
+
+/* button */
+.book-demo-form-btn {
+    width: 20%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.book-demo-form-btn:hover {
+    background-color: #8c8c8c;
+}
+
+
+/* alert */
+.book-demo-alert {
+    color: rgb(157, 88, 28);
+}
+
+.book-demo-notification {
+    color: #212121;
+}
+
+
+/* mobile view  */
+@media screen and (max-width: 650px) {
+
+    .book-demo-title {
+        font-size: 1.5rem;
+    }
+
+    .book-demo-description {
+        font-size: 1rem;
+        margin-bottom: 10%;
+    }
+
+    .book-demo-form-item {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .book-demo-form-item input, .book-demo-form-item textarea {
+        margin-bottom: 5%;
+        font-size: 1rem;
+    }
+
+    .book-demo-form-btn {
+        width: 40%;
+        padding: 15px;
+        font-size: 1rem;
+    }
+}

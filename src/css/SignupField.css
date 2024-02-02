@@ -36,17 +36,17 @@
     width: 40%;
     padding: 10px 20px;
     font-size: 1rem;
+    font-weight: 500;
     color: white;
     background-color: #333; /* Adjust button color as needed */
     border: none;
     border-radius: 5px; /* Rounded corners for the button */
     cursor: pointer; /* Changes cursor to pointer on hover */
     outline: none; /* Removes the default focus outline */
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .signup-field-btn:hover {
-    scale: 1.02;
     background-color: #555; /* Darkens button on hover */
 }
 
@@ -96,4 +96,19 @@
         padding: 2%;
         font-size: 0.8rem;
     }
+}
+
+@media screen and (max-width: 450px) {
+    .signup-field-form {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 5%;
+        margin-top: 10%;
+    }
+
+    .signup-field-btn {
+        width: 50%;
+    }
+
 }
