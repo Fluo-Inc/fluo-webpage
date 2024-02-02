@@ -7,3 +7,11 @@
   
 }
 
+
+@media screen and (max-width: 650px) { 
+  .App {
+    width: 90%;
+    margin-top: 2%;
+  }
+}
+

@@ -79,17 +79,27 @@
 @media screen and (max-width: 650px) {
     .navbar {
         margin-bottom: 30%;
+        gap: 5%;
     }
+
+    .navbar-logo {
+        width: 15rem;
+    }
+
+    .navbar-logo img{
+        width: 100%;
+    }
+
     .navbar-link {
         gap: 5%;
     }
     .navbar-link-item {
         font-size: 0.9rem;
-        padding: 2px 5px;
+        padding: 7px 7px;
     }
 
     .navbar-contact {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         width: 20rem;
         padding: 7px 5px;
     }

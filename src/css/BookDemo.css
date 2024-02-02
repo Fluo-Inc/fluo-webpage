@@ -26,6 +26,14 @@
 
 
 /* form */
+.book-demo-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+
 .book-demo-form-item {
     width: 100%;
     display: flex;
@@ -92,6 +100,15 @@
 
 /* mobile view  */
 @media screen and (max-width: 650px) {
+    .book-demo {
+        width: 100%;
+        margin-bottom: 5%;
+        align-items: center;
+    }
+
+    .book-demo-form {
+        width: 90%;
+    }
 
     .book-demo-title {
         font-size: 1.5rem;
@@ -103,8 +120,10 @@
     }
 
     .book-demo-form-item {
+        width: 100%;
         flex-direction: column;
         margin-bottom: 0;
+        gap: 0;
     }
 
     .book-demo-form-item input, .book-demo-form-item textarea {
@@ -113,8 +132,9 @@
     }
 
     .book-demo-form-btn {
-        width: 40%;
+        width: 100%;
         padding: 15px;
         font-size: 1rem;
+        font-weight: 600;
     }
 }

@@ -112,7 +112,9 @@ function BookDemo() {
             </div>
 
             {/* form */}
-            <form onSubmit={handleSubmit} ref={formRef}>
+            <form   className='book-demo-form'
+                    onSubmit={handleSubmit} 
+                    ref={formRef}>
                 <div className='book-demo-form-item'>
                     <input
                         type="text"
