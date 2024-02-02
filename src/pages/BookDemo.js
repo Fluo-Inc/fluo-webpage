@@ -6,11 +6,16 @@ import '../css/BookDemo.css';
 // effect
 import useSequentialEffect from '../hooks/useSequentialEffect';
 
+
 function BookDemo() {
 
     // sequential effect
     const formRef = useRef(null);
     useSequentialEffect(formRef, '.book-demo-form-item', 100);
+
+
+    // loading state
+    const [isLoading, setIsLoading] = useState(false); 
 
 
     // formData
@@ -40,50 +45,59 @@ function BookDemo() {
 
    // handle form submission
    const handleSubmit = async (e) => {
-       e.preventDefault();
+        e.preventDefault();
 
-       // validate form
-       const missing = validateForm();
+        // start loading
+        setIsLoading(true);
 
-       if (missing.length > 0) {
-           setMissingFields(missing);
-           return;
-       }
+        // validate form
+        const missing = validateForm();
 
-       // send email
-       try {
-           const response = await fetch('https://fluo-book-demo.vercel.app/send-email', {
-               method: 'POST',
-               headers: {
-                   'Content-Type': 'application/json',
-               },
-               credentials: 'include',
-               body: JSON.stringify({ formData }),
-           });
-           if (response.ok) {
-               console.log("Email sent successfully!");
-           } else {
-               console.log("Error sending email.");
-               setNotification("Error sending email.");
-               return
-           }
-       } catch (error) {
-           console.error("There was an error sending the email:", error);
-           setNotification("There was an error sending the email.");
-           return
-       }
+        if (missing.length > 0) {
+            setMissingFields(missing);
+            setIsLoading(false);
+            return;
+        }
 
-       // display success message
-       setNotification("Thank you for your request! We will get back to you ASAP.");
+        // send email
+        try {
+            const response = await fetch('https://fluo-book-demo.vercel.app/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                credentials: 'include',
+                body: JSON.stringify({ formData }),
+            });
+            if (response.ok) {
+                console.log("Email sent successfully!");
+            } else {
+                console.log("Error sending email.");
+                setNotification("Error sending email.");
+                setIsLoading(false);
+                return
+            }
+        } catch (error) {
+            console.error("There was an error sending the email:", error);
+            setNotification("There was an error sending the email.");
+            setIsLoading(false);
+            return
+        }
 
-       // clear form
-       setFormData({
+        // display success message
+        setNotification("Thank you for your request! We will get back to you ASAP.");
+
+        // stop loading
+        setIsLoading(false);
+
+        // clear form
+        setFormData({
             name: "",
             phone: "",
             email: "",
             company: "",
             message: ""
-       });
+        });
    };
 
     return (
@@ -138,7 +152,7 @@ function BookDemo() {
                 {/* button */}
                 <button className='book-demo-form-btn'
                         type="submit" >
-                    Send message
+                    {isLoading ? "Loading.." : 'Send Message'}
                 </button>
             </form>
 
