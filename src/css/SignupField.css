@@ -7,11 +7,11 @@
 }
 
 .signup-field-form {
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 2%;
+    gap: 1rem;
 }
 
 .signup-field-input {
@@ -33,7 +33,7 @@
 }
 
 .signup-field-btn {
-    width: 40%;
+    width: 25%;
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: 500;

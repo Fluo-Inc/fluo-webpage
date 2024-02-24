@@ -53,7 +53,7 @@
     width: 100%;
     padding: 1rem;
     border-radius: 5px;
-    border: 1px solid #d1d1d1;
+    border: 2px solid #d1d1d1;
     font-size: 1.1rem;
     outline: none; 
     transition: all 0.2s ease-in-out;
@@ -65,7 +65,7 @@
 }
 
 .book-demo-form-item input:focus, .book-demo-form-item textarea:focus {
-    border: 1px solid #000000;
+    border: 2px solid #000000;
 }
 
 
