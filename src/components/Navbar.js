@@ -41,8 +41,8 @@ const Navbar = () => {
             <div className="navbar-right">
                 <div className={`navbar-link ${isExpanded || windowWidth > 1000 ? 'expanded' : 'collapsed'}`}
                      onClick={toggleNavbar}>
-                    <div className="navbar-link-item">Products</div>
-                    <div className="navbar-link-item">Use Cases</div>
+                    {/* <div className="navbar-link-item">Products</div>
+                    <div className="navbar-link-item">Use Cases</div> */}
                     <Link to='/technology' className="navbar-link-item">Technology</Link>
                     <Link to='/team' className="navbar-link-item">Team</Link>
                 </div>

@@ -6,9 +6,7 @@ import { Link } from 'react-router-dom';
 import '../css/Home.css';
 
 // components
-import SignupField from '../components/SignupField';
 import VideoPlayer from '../components/VideoPlayer';
-import Email from '../components/Email';
 
 
 
@@ -91,8 +89,9 @@ const Home = () => {
                         ref={signupRef}>
                             <SignupField />
                     </div> */}
-                     <Link to="/book-demo" className="home-contact">
-                        Free Trial
+                     <Link to="https://fluo-demo.netlify.app/" target='_blank'
+                           className="home-contact">
+                        Demo
                     </Link>
                 </div>
 

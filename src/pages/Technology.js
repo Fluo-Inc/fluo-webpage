@@ -17,12 +17,18 @@ const Technology = () => {
     return (
         <div className='tech'>
             <div className="tech-header">
-                <div className="tech-title">
-                    Innovation At the Core
+                <div className="tech-header-text">
+                    <div className="tech-title">
+                        Innovation At the Core
+                    </div>
+                    <div className="tech-description">
+                        Discover how Fluo's cutting-edge AI and vision-driven technology 
+                        revolutionizes apartment parking management.
+                    </div>
                 </div>
-                <div className="tech-description">
-                    Discover how Fluo's cutting-edge AI and vision-driven technology 
-                    revolutionizes apartment parking management.
+                <div className="tech-header-img">
+                    <img src="https://images.unsplash.com/photo-1550275994-2bc88dc68637?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                         alt="tech header" />
                 </div>
             </div>
 
