@@ -34,8 +34,14 @@ const Technology = () => {
 
             {/* ai engine */}
             <div className="tech-section ">
-                <div className="tech-section-title">
-                    Fluo AI Engine
+                <div className="tech-section-header">
+                    <div className="tech-section-title">
+                        Fluo AI Engine
+                    </div>
+                    <div className="tech-section-description">
+                        Our AI engine is designed to deliver the highest accuracy 
+                        and speed in license plate detection.
+                    </div>
                 </div>
                 <div className="tech-section-top tech-ai-engine">
                     <div className="tech-section-top-title">
@@ -80,8 +86,14 @@ const Technology = () => {
 
             {/* hardware */}
             <div className="tech-section ">
-                <div className="tech-section-title">
-                    Hardwares
+                <div className="tech-section-header">
+                    <div className="tech-section-title">
+                        Modular Hardware
+                    </div>
+                    <div className="tech-section-description">
+                        Our camera is designed to be durable, easy to install, and 
+                        easy to replace – no more costly maintenance.
+                    </div>
                 </div>
                 <div className="tech-section-top tech-hardwares">
                     <div className="tech-section-top-title">
@@ -126,8 +138,14 @@ const Technology = () => {
 
             {/* hardware */}
             <div className="tech-section ">
-                <div className="tech-section-title">
-                    Software
+                <div className="tech-section-header">
+                    <div className="tech-section-title">
+                        All-in-One Command
+                    </div>
+                    <div className="tech-section-description">
+                        Have full control over your parking data and management with our
+                        user-friendly SaaS portal – no more guesswork.
+                    </div>
                 </div>
                 <div className="tech-section-top tech-software">
                     <div className="tech-section-top-title">

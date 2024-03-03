@@ -81,17 +81,16 @@ const Home = () => {
                     <div className="home-title-description">
                         Streamline and scale your 
                         <span className='primary'> residential parking operations </span>
-                        with our AI-powered solution, 
-                        designed to enhance security and improve tenent experience.
+                        with Fluo AI-powered solution
                     </div>
                     {/* signup field
                     <div className={`home-sigup-field ${signupInView ? 'bounce-up' : ''}`}
                         ref={signupRef}>
                             <SignupField />
                     </div> */}
-                     <Link to="https://fluo-demo.netlify.app/" target='_blank'
+                     <Link to="/book-demo"
                            className="home-contact">
-                        Demo
+                        Book a Demo
                     </Link>
                 </div>
 

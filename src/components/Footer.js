@@ -15,6 +15,9 @@ const Footer = () => {
 
     return (
         <div className='footer'>
+            <div className="footer-right">
+                © Fluo AI
+            </div>
             <div className="footer-left">
                 <a  href={twitterUrl}
                     target="_blank"
@@ -34,9 +37,6 @@ const Footer = () => {
                     className="footer-icon">
                     <SlSocialLinkedin />
                 </a>
-            </div>
-            <div className="footer-right">
-                © 2023 Fluo AI
             </div>
         </div>
     );

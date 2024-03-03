@@ -9,12 +9,16 @@
 }
 
 .team-title {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    font-size: 2rem;
-    font-weight: 500;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 400;
     margin-bottom: 10%;
-    gap: 10px;
+}
+
+.team-title p {
+    margin: 1rem 1rem;
 }
 
 
@@ -194,8 +198,8 @@
     }
 
     .team-title {
-        font-size: 1.5rem;
-        font-weight: 500;
+        font-size: 2rem;
+        font-weight: 400;
         margin-bottom: 30%;
     }
 
@@ -212,9 +216,16 @@
         margin-bottom: 5%;
     }
 
+    .team-member-item-image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        object-fit: cover;
+    }
+
     .team-member-item-name {
-        font-size: 1.2rem;
-        font-weight: 500;
+        font-size: 1.5rem;
+        font-weight: 400;
         margin-bottom: 2%;
     }
 

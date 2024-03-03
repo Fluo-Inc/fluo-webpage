@@ -44,7 +44,7 @@ const Team = () => {
     const teamMembers = [
         {
             name: "Kaisen Ye",
-            position: "Founder & CEO",
+            position: "Co-Founder",
             description: `Kaisen Ye, an Indiana University alum with a keen interest in the convergence 
             of computing and mathematics, is now pursuing a Master's in Machine Learning at USC. 
             His journey includes experience as a Software Engineer Intern at PayPal and as a Math 
@@ -56,7 +56,7 @@ const Team = () => {
         },
         {
             name: "Jayce Pan",
-            position: "Founder & CTO",
+            position: "Co-Founder",
             description: `Jayce Pan, currently studying computer networking at USC, 
             brings diverse experience from his time as a Research Assistant at 
             Syracuse University, focusing on drone data collection, and as an intern 
@@ -114,7 +114,7 @@ const Team = () => {
         <div className='team'>
             <div className={`team-title ${titleInView ? 'bounce-up' : ''}`}
                  ref={titleRef}>
-                <p className='gray'>Our leadership.</p>
+                <p className='gray'>Our leadership</p>
                 <p>Your team</p>
             </div>
             <div className="team-members">
