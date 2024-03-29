@@ -44,7 +44,7 @@ const Navbar = () => {
                     {/* <div className="navbar-link-item">Products</div>
                     <div className="navbar-link-item">Use Cases</div> */}
                     <Link to='/technology' className="navbar-link-item">Technology</Link>
-                    <Link to='/team' className="navbar-link-item">Team</Link>
+                    {/* <Link to='/team' className="navbar-link-item">Team</Link> */}
                 </div>
                 <Link to="/book-demo" className="navbar-contact">Book a Demo</Link>
                 <div className={`navbar-toggler ${isExpanded || windowWidth > 1000 ? 'expanded' : 'collapsed'}`} onClick={toggleNavbar}>

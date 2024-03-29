@@ -15,7 +15,6 @@ const homeTitleOptions = [
     "Guest Parking",
     "Residents Access",
     "Gargage Patrol",
-
 ];
 
 
