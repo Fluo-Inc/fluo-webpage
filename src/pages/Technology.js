@@ -11,6 +11,7 @@ import aiGrowth from '../assets/aigrowth.svg';
 import aiEvovle from '../assets/aievolve.svg';
 import hardware1 from '../assets/hardware1.svg';
 import softare1 from '../assets/software1.svg';
+import technology from '../assets/technology.webp';
 
 
 const Technology = () => {
@@ -27,7 +28,7 @@ const Technology = () => {
                     </div>
                 </div>
                 <div className="tech-header-img">
-                    <img src="https://images.unsplash.com/photo-1550275994-2bc88dc68637?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    <img src={technology}
                          alt="tech header" />
                 </div>
             </div>

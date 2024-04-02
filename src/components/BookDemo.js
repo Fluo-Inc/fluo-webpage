@@ -105,10 +105,11 @@ function BookDemo() {
 
             {/* title */}
             <div className="book-demo-title">
-                Book a Demo
+               Request a Demo
             </div>
             <div className="book-demo-description">
-                Fill out the form and we will get back to you ASAP!
+                Discover the power of Fluo parking management platform through 
+                a personalized demo led by our experienced product specialists. 
             </div>
 
             {/* form */}
@@ -154,7 +155,7 @@ function BookDemo() {
                 {/* button */}
                 <button className='book-demo-form-btn'
                         type="submit" >
-                    {isLoading ? "Loading.." : 'Send Message'}
+                    {isLoading ? "Loading.." : 'Book a Free Demo'}
                 </button>
             </form>
 

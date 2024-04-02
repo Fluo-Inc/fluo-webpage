@@ -1,6 +1,7 @@
 .book-demo {
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 100vh;
     margin-bottom: 10%;
 }
@@ -11,15 +12,16 @@
 
 /* title */
 .book-demo-title {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 500;
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 400;
     margin-bottom: 2%;
 }
 
 .book-demo-description {
-    text-align: center;
-    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.1rem;
     color: #787878;
     margin-bottom: 5%;
 }
@@ -30,7 +32,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 5%;
 }
 
@@ -52,10 +54,10 @@
 .book-demo-form-item input, .book-demo-form-item textarea {
     width: 100%;
     padding: 1rem;
-    border-radius: 5px;
-    border: 2px solid #d1d1d1;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
     font-size: 1.1rem;
-    outline: none; 
+    outline: none;
     transition: all 0.2s ease-in-out;
 }
 
@@ -65,13 +67,13 @@
 }
 
 .book-demo-form-item input:focus, .book-demo-form-item textarea:focus {
-    border: 2px solid #000000;
+    border: 1px solid #000000;
 }
 
 
 /* button */
 .book-demo-form-btn {
-    width: 20%;
+    width: 100%;
     padding: 15px;
     border: none;
     border-radius: 10px;

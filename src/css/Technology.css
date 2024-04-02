@@ -46,8 +46,8 @@
     height: 70%;
     object-fit: cover;
     border-radius: 1rem;
+    animation: opacity 1s ease-in-out;
     transition: all 0.5s ease-in-out;
-    animation: slideUp 0.5s ease-in-out;
 }
 
 .tech-header-img img {

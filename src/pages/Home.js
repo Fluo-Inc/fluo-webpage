@@ -7,7 +7,7 @@ import '../css/Home.css';
 
 // components
 import VideoPlayer from '../components/VideoPlayer';
-
+import Stats from '../components/Stats';
 
 
 const homeTitleOptions = [
@@ -97,6 +97,11 @@ const Home = () => {
                 <div className="home-video">
                     <VideoPlayer s3VideoUrl={previewUrl}  youtubeVideoId={youtubeVideoId}/>
                 </div>
+            </div>
+
+            {/* home stats */}
+            <div className="home-stats">
+                <Stats />
             </div>
 
             {/* home slogan */}
