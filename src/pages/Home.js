@@ -79,7 +79,7 @@ const Home = () => {
                     </div>
                     <div className="home-title-description">
                         Streamline and scale your 
-                        <span className='primary'> residential parking operations </span>
+                        <span className='primary'> apartment parking operations </span>
                         with Fluo AI-powered solution
                     </div>
                     {/* signup field
