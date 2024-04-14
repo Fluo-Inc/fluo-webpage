@@ -14,8 +14,8 @@ const transition = {
 
 export const Menu = ({ setActive, children }) => {  
   return (
-    <nav onMouseLeave={() => setActive(null)} // resets the state
-         className="navbar-menu">
+    <nav  onMouseLeave={() => setActive(null)}// resets the state
+          className="navbar-menu">
       {children}
     </nav>
   );
@@ -25,6 +25,7 @@ export const MenuItem = ({ setActive, active, item, children }) => {
 
   return (
     <div onMouseEnter={() => setActive(item)} 
+    
          className="navbar-menu-item">
       <motion.p transition={{ duration: 0.3 }}>
         {item}
