@@ -1,59 +1,78 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+"use client";
+import React, { useState } from "react";
+import { HoveredLink, Menu, MenuItem, GridItem } from "../utils/navbar-menu";
+import { Link } from "react-router-dom";
+
+// css
+import "../css/Navbar.css";
 
 // assets
 import logo from '../assets/logo.svg';
 
-// css
-import '../css/Navbar.css';
-import { HiMenuAlt3 } from "react-icons/hi";
-import { IoArrowBackCircleOutline } from "react-icons/io5";
-
-
-const Navbar = () => {
-    const [isExpanded, setIsExpanded] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    const toggleNavbar = () => {
-        setIsExpanded(!isExpanded);
-    };
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-            if (window.innerWidth > 1000) {
-                setIsExpanded(false);
-            }
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+function Navbar() {
+    const [active, setActive] = useState(null);
 
     return (
-        <div className='navbar'>
-            <Link to="/" className="navbar-logo">
-                <img src={logo} alt="logo" />
-            </Link>
-            <div className="navbar-right">
-                <div className={`navbar-link ${isExpanded || windowWidth > 1000 ? 'expanded' : 'collapsed'}`}
-                     onClick={toggleNavbar}>
-                    {/* <div className="navbar-link-item">Products</div>
-                    <div className="navbar-link-item">Use Cases</div> */}
-                    <Link to='/technology' className="navbar-link-item">Technology</Link>
-                    {/* <Link to='/team' className="navbar-link-item">Team</Link> */}
+        <div className="navbar">
+            <Menu setActive={setActive}>
+                <Link to="/" className="navbar-logo">
+                    <img src={logo} alt="logo" />
+                </Link>
+                <div className="navbar-menu-item-container">
+                    <MenuItem setActive={setActive} active={active} item="Platform">
+                        <div className="navbar-menu-item-div-link">
+                            <HoveredLink href="/web-dev">Web Development</HoveredLink>
+                            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
+                            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
+                            <HoveredLink href="/branding">Branding</HoveredLink>
+                        </div>
+                    </MenuItem>
+                    <MenuItem setActive={setActive} active={active} item="Features">
+                        <div className="navbar-menu-item-div-grid">
+                            <GridItem
+                                title="Algochurn"
+                                href="https://algochurn.com"
+                                src="https://assets.aceternity.com/demos/algochurn.webp"
+                                description="Prepare for tech interviews like never before."
+                            />
+                            <GridItem
+                                title="Tailwind Master Kit"
+                                href="https://tailwindmasterkit.com"
+                                src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+                                description="Production ready Tailwind css components for your next project"
+                            />
+                            <GridItem
+                                title="Moonbeam"
+                                href="https://gomoonbeam.com"
+                                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+                                description="Never write from scratch again. Go from idea to blog in minutes."
+                            />
+                            <GridItem
+                                title="Rogue"
+                                href="https://userogue.com"
+                                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+                                description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+                            />
+                        </div>
+                    </MenuItem>
+                    <HoveredLink link="/about">
+                        About
+                    </HoveredLink>
+                    {/* <MenuItem setActive={setActive} active={active} item="Pricing">
+                        <div className="navbar-menu-item-div-link">
+                            <HoveredLink href="/hobby">Hobby</HoveredLink>
+                            <HoveredLink href="/individual">Individual</HoveredLink>
+                            <HoveredLink href="/team">Team</HoveredLink>
+                            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+                        </div>
+                    </MenuItem> */}
                 </div>
-                <Link to="/book-demo" className="navbar-contact">Book a Demo</Link>
-                <div className={`navbar-toggler ${isExpanded || windowWidth > 1000 ? 'expanded' : 'collapsed'}`} onClick={toggleNavbar}>
-                    {/* Icon or text to indicate menu expansion */}
-                    {isExpanded ? <IoArrowBackCircleOutline /> : <HiMenuAlt3 />}
-                </div>
-            </div>
+                <Link to="/book-demo" className="navbar-contact">
+                    Book a Demo
+                </Link>
+            </Menu>
         </div>
     );
-};
+}
 
 export default Navbar;
