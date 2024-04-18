@@ -78,11 +78,17 @@ export const GridItem = ({ title, description, href, src }) => {
   );
 };
 
-export const HoveredLink = ({ children, link }) => {
+export const HoveredLink = ({ children, link, icon }) => {
   return (
     <Link to={link}
           className="navbar-menu-link">
-      {children}
+      <span className="navbar-menu-link-icon">
+        {icon}
+      </span>
+      <div className="navbar-menu-link-title">
+        {children}
+      </div>
+      
     </Link>
   );
 };

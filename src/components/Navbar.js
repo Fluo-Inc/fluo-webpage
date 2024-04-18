@@ -5,9 +5,17 @@ import { Link } from "react-router-dom";
 
 // css
 import "../css/Navbar.css";
+import { LuMonitorDot } from "react-icons/lu";
+import { TbCapture } from "react-icons/tb";
+import { GrAnalytics } from "react-icons/gr";
+import { LuAlertTriangle } from "react-icons/lu";
 
 // assets
 import logo from '../assets/logo.svg';
+import parkingAccess from '../assets/navbar/parking-access.svg'; 
+import guestManagement from '../assets/navbar/guest-management.svg';
+import threatDetection from '../assets/navbar/threat-detection.svg';
+import garagePatrol from '../assets/navbar/garage-patrol.svg';
 
 function Navbar() {
     const [active, setActive] = useState(null);
@@ -16,49 +24,59 @@ function Navbar() {
         <div className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                        <img src={logo} alt="logo" />
+                    <img src={logo} alt="logo" />
                 </Link>
+
+                {/* menu */}
                 <Menu setActive={setActive}>
                     <div className="navbar-menu-item-container">
                         <MenuItem setActive={setActive} active={active} item="Platform">
                             <div className="navbar-menu-item-div-link">
-                                <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                                <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-                                <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-                                <HoveredLink href="/branding">Branding</HoveredLink>
+                                <HoveredLink link="/web-dev" icon={<LuMonitorDot />}>
+                                    Monitor
+                                </HoveredLink>
+                                <HoveredLink link="/interface-design" icon={<TbCapture />}>
+                                    Detection
+                                </HoveredLink>
+                                <HoveredLink link="/seo" icon={<GrAnalytics />}>
+                                    Analytics
+                                </HoveredLink>
+                                <HoveredLink link="/branding" icon={<LuAlertTriangle />}>
+                                    Alert
+                                </HoveredLink>
                             </div>
                         </MenuItem>
-                        <MenuItem setActive={setActive} active={active} item="Features">
+                        <MenuItem setActive={setActive} active={active} item="Use Cases">
                             <div className="navbar-menu-item-div-grid">
                                 <GridItem
-                                    title="Algochurn"
-                                    href="https://algochurn.com"
-                                    src="https://assets.aceternity.com/demos/algochurn.webp"
-                                    description="Prepare for tech interviews like never before."
-                                />
-                                <GridItem
-                                    title="Tailwind Master Kit"
+                                    title="Parking Access"
                                     href="https://tailwindmasterkit.com"
-                                    src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                                    description="Production ready Tailwind css components for your next project"
+                                    src={parkingAccess}
+                                    description="Touchless access for residents and staff with our AI-powered camera"
                                 />
                                 <GridItem
-                                    title="Moonbeam"
+                                    title="Guest Management"
                                     href="https://gomoonbeam.com"
-                                    src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-                                    description="Never write from scratch again. Go from idea to blog in minutes."
+                                    src={guestManagement}
+                                    description="Seamless visitor access with our streamline guest parking system"
+                                />
+                                 <GridItem
+                                    title="Threat Detection"
+                                    href="https://algochurn.com"
+                                    src={threatDetection}
+                                    description="Automated threat detection and instant alerts with our vision-driven solution"
                                 />
                                 <GridItem
-                                    title="Rogue"
+                                    title="Garage Patrol"
                                     href="https://userogue.com"
-                                    src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-                                    description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+                                    src={garagePatrol}
+                                    description="Real-time monitoring of unauthorized entries, violations, and security incidents"
                                 />
                             </div>
                         </MenuItem>
-                        <HoveredLink link="/about">
+                        <Link to="/about">
                             About
-                        </HoveredLink>
+                        </Link>
                         {/* <MenuItem setActive={setActive} active={active} item="Pricing">
                             <div className="navbar-menu-item-div-link">
                                 <HoveredLink href="/hobby">Hobby</HoveredLink>
@@ -69,8 +87,10 @@ function Navbar() {
                         </MenuItem> */}
                     </div>
                 </Menu>
+
+                {/* contact */}
                 <Link to="/book-demo" className="navbar-contact">
-                        Book a Demo
+                    Book a Demo
                 </Link>
             </div>
         </div>

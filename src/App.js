@@ -4,12 +4,13 @@ import './css/App.css';
 
 // pages & components
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Home from './pages/Home';
 import Team from './pages/Team';
 import Technology from './pages/Technology';
 import Request from './pages/Request';
 
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
               <Route path="/book-demo"  element={<Request />} />
             </Routes>
           </div>
+
+          {/* Footer */}
           <Footer />
       </div>
     </Router>
