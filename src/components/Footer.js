@@ -20,21 +20,21 @@ const Footer = () => {
                 </div>
                 <div className="footer-info-social-media">
                     <div className="footer-info-social-media-item">
-                        <a  href="https://www.linkedin.com/company/hippsc/" 
+                        <a  href="https://www.linkedin.com/company/fluoai/" 
                             target="_blank" 
                             rel="noopener noreferrer">
                             <AiOutlineLinkedin />
                         </a>
                     </div>
                     <div className="footer-info-social-media-item">
-                        <a  href="https://www.youtube.com/@HIPPSC" 
+                        <a  href="https://www.youtube.com/channel/UClsVkZZnwT2nY1Okt4MJTnw" 
                             target="_blank" 
                             rel="noopener noreferrer">
                             <AiOutlineYoutube />
                         </a>
                     </div>
                     <div className="footer-info-social-media-item smaller-icon">
-                        <a  href="https://twitter.com/HIPPSCUSA" 
+                        <a  href="https://twitter.com/FluoAI" 
                             target="_blank" 
                             rel="noopener noreferrer">
                             <RiTwitterXLine />

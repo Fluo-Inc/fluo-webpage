@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, GridItem } from "../utils/navbar-menu";
+import { HoveredLink, Menu, MenuItem, GridItem } from "./navbar-menu";
 import { Link } from "react-router-dom";
 
 // css
@@ -32,14 +32,14 @@ function Navbar() {
                     <div className="navbar-menu-item-container">
                         <MenuItem setActive={setActive} active={active} item="Platform">
                             <div className="navbar-menu-item-div-link">
-                                <HoveredLink link="/web-dev" icon={<LuMonitorDot />}>
-                                    Monitor
-                                </HoveredLink>
-                                <HoveredLink link="/interface-design" icon={<TbCapture />}>
+                                <HoveredLink link="/platform/detection" icon={<TbCapture />}>
                                     Detection
                                 </HoveredLink>
-                                <HoveredLink link="/seo" icon={<GrAnalytics />}>
+                                <HoveredLink link="/platform/analytics" icon={<GrAnalytics />}>
                                     Analytics
+                                </HoveredLink>
+                                <HoveredLink link="/web-dev" icon={<LuMonitorDot />}>
+                                    Monitor
                                 </HoveredLink>
                                 <HoveredLink link="/branding" icon={<LuAlertTriangle />}>
                                     Alert
@@ -74,7 +74,7 @@ function Navbar() {
                                 />
                             </div>
                         </MenuItem>
-                        <Link to="/about">
+                        <Link to="/technology">
                             About
                         </Link>
                         {/* <MenuItem setActive={setActive} active={active} item="Pricing">

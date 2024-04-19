@@ -1,6 +1,7 @@
 :root {
   --primary-color: rgb(33, 33, 33);
   --secondary-color: #787878;
+  --gray-color: #bebebe;
 }
 
 
@@ -25,7 +26,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1300px;
   scroll-behavior: smooth;
 }
 
