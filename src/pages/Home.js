@@ -24,7 +24,6 @@ const Home = () => {
     const previewUrl = 'https://loca-ai.s3.us-west-1.amazonaws.com/preview.mp4';
     const youtubeVideoId = 'dzrXlkte1Aw';
 
-
     // home title changing animation
     const [currentText, setCurrentText] = useState('');
     const [arrayIndex, setArrayIndex] = useState(0);

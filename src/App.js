@@ -11,7 +11,7 @@ import Team from './pages/Team';
 import Technology from './pages/Technology';
 import Request from './pages/Request';
 import Detection from './pages/Detection';
-
+import Analytics from './pages/Analytics';
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
               <Route path="/technology"  element={<Technology />} />
               <Route path="/book-demo"  element={<Request />} />
               <Route path="/platform/detection"  element={<Detection />} />
+              <Route path="/platform/analytics"  element={<Analytics />} />
             </Routes>
           </div>
 
