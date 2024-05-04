@@ -49,6 +49,18 @@ function Navbar() {
                         <MenuItem setActive={setActive} active={active} item="Use Cases">
                             <div className="navbar-menu-item-div-grid">
                                 <GridItem
+                                    title="Garage Patrol"
+                                    href="https://userogue.com"
+                                    src={garagePatrol}
+                                    description="Real-time monitoring of unauthorized entries, violations, and security incidents"
+                                />
+                                <GridItem
+                                    title="Threat Detection"
+                                    href="https://algochurn.com"
+                                    src={threatDetection}
+                                    description="Automated threat detection and instant alerts with our vision-driven solution"
+                                />
+                                <GridItem
                                     title="Parking Access"
                                     href="https://tailwindmasterkit.com"
                                     src={parkingAccess}
@@ -60,21 +72,9 @@ function Navbar() {
                                     src={guestManagement}
                                     description="Seamless visitor access with our streamline guest parking system"
                                 />
-                                 <GridItem
-                                    title="Threat Detection"
-                                    href="https://algochurn.com"
-                                    src={threatDetection}
-                                    description="Automated threat detection and instant alerts with our vision-driven solution"
-                                />
-                                <GridItem
-                                    title="Garage Patrol"
-                                    href="https://userogue.com"
-                                    src={garagePatrol}
-                                    description="Real-time monitoring of unauthorized entries, violations, and security incidents"
-                                />
                             </div>
                         </MenuItem>
-                        <Link to="/technology">
+                        <Link to="/technology" onMouseEnter={() => setActive(null)}>
                             About
                         </Link>
                         {/* <MenuItem setActive={setActive} active={active} item="Pricing">

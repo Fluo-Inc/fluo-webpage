@@ -52,14 +52,14 @@ const Footer = () => {
                 <div className="footer-title">
                     PLATFORM
                 </div>
-                <Link to='' className="footer-item">
-                    Monitor
-                </Link>
-                <Link to='' className="footer-item">
+                <Link to='/platform/detection' className="footer-item">
                     Detection
                 </Link>
-                <Link to='' className="footer-item">
+                <Link to='/platform/analytics' className="footer-item">
                     Analytics
+                </Link>
+                <Link to='/monitor' className="footer-item">
+                    Monitor
                 </Link>
                 <Link to='' className="footer-item">
                     Alert
@@ -67,21 +67,20 @@ const Footer = () => {
             </div>
             <div className="footer-section">
                 <div className="footer-title">
-                    FEATURES
+                    USE CASES
                 </div>
+                <Link to='/about' className="footer-item">
+                    Garage Patrol
+                </Link>
+                <Link to='/about' className="footer-item">
+                    Threat Detection
+                </Link>
                 <Link to='/about' className="footer-item">
                     Parking Access
                 </Link>
                 <Link to='/about' className="footer-item">
                     Guest Management
                 </Link>
-                <Link to='/about' className="footer-item">
-                    Threat Detection
-                </Link>
-                <Link to='/about' className="footer-item">
-                    Garage Patrol
-                </Link>
-
             </div>
             <div className="footer-contact footer-section">
                 <div className="footer-contact-title">
