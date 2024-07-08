@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 
 // css
 import "../css/Navbar.css";
-import { LuMonitorDot } from "react-icons/lu";
+// import { LuMonitorDot } from "react-icons/lu";
 import { TbCapture } from "react-icons/tb";
 import { GrAnalytics } from "react-icons/gr";
-import { LuAlertTriangle } from "react-icons/lu";
+// import { LuAlertTriangle } from "react-icons/lu";
 
 // assets
 import logo from '../assets/logo.svg';
-import parkingAccess from '../assets/navbar/parking-access.svg'; 
-import guestManagement from '../assets/navbar/guest-management.svg';
+// import parkingAccess from '../assets/navbar/parking-access.svg'; 
+// import guestManagement from '../assets/navbar/guest-management.svg';
 import threatDetection from '../assets/navbar/threat-detection.svg';
 import garagePatrol from '../assets/navbar/garage-patrol.svg';
 

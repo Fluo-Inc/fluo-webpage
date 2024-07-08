@@ -7,7 +7,7 @@ import '../css/Home.css';
 
 // components
 import VideoPlayer from '../components/VideoPlayer';
-import Stats from '../components/Stats';
+// import Stats from '../components/Stats';
 
 
 const homeTitleOptions = [
