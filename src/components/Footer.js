@@ -58,12 +58,12 @@ const Footer = () => {
                 <Link to='/platform/analytics' className="footer-item">
                     Analytics
                 </Link>
-                <Link to='/monitor' className="footer-item">
+                {/* <Link to='/monitor' className="footer-item">
                     Monitor
                 </Link>
                 <Link to='' className="footer-item">
                     Alert
-                </Link>
+                </Link> */}
             </div>
             <div className="footer-section">
                 <div className="footer-title">
@@ -75,12 +75,32 @@ const Footer = () => {
                 <Link to='/about' className="footer-item">
                     Threat Detection
                 </Link>
-                <Link to='/about' className="footer-item">
+                {/* <Link to='/about' className="footer-item">
                     Parking Access
                 </Link>
                 <Link to='/about' className="footer-item">
                     Guest Management
+                </Link> */}
+            </div>
+            <div className="footer-section">
+                <div className="footer-title">
+                    COMPANY
+                </div>
+                <Link to='/about' className="footer-item">
+                    About Us
                 </Link>
+                <Link to='/terms-of-use' className="footer-item">
+                    Term of use
+                </Link>
+                <Link to='/privacy-policy' className="footer-item">
+                    Privacy Policy
+                </Link>
+                {/* <Link to='/about' className="footer-item">
+                    Parking Access
+                </Link>
+                <Link to='/about' className="footer-item">
+                    Guest Management
+                </Link> */}
             </div>
             <div className="footer-contact footer-section">
                 <div className="footer-contact-title">

@@ -38,18 +38,18 @@ function Navbar() {
                                 <HoveredLink link="/platform/analytics" icon={<GrAnalytics />}>
                                     Analytics
                                 </HoveredLink>
-                                <HoveredLink link="/web-dev" icon={<LuMonitorDot />}>
+                                {/* <HoveredLink link="/web-dev" icon={<LuMonitorDot />}>
                                     Monitor
                                 </HoveredLink>
                                 <HoveredLink link="/branding" icon={<LuAlertTriangle />}>
                                     Alert
-                                </HoveredLink>
+                                </HoveredLink> */}
                             </div>
                         </MenuItem>
                         <MenuItem setActive={setActive} active={active} item="Use Cases">
                             <div className="navbar-menu-item-div-grid">
                                 <GridItem
-                                    title="Garage Patrol"
+                                    title="Security Patrol"
                                     href="https://userogue.com"
                                     src={garagePatrol}
                                     description="Real-time monitoring of unauthorized entries, violations, and security incidents"
@@ -60,7 +60,7 @@ function Navbar() {
                                     src={threatDetection}
                                     description="Automated threat detection and instant alerts with our vision-driven solution"
                                 />
-                                <GridItem
+                                {/* <GridItem
                                     title="Parking Access"
                                     href="https://tailwindmasterkit.com"
                                     src={parkingAccess}
@@ -71,7 +71,7 @@ function Navbar() {
                                     href="https://gomoonbeam.com"
                                     src={guestManagement}
                                     description="Seamless visitor access with our streamline guest parking system"
-                                />
+                                /> */}
                             </div>
                         </MenuItem>
                         <Link to="/technology" onMouseEnter={() => setActive(null)}>

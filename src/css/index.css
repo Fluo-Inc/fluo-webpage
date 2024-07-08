@@ -56,7 +56,7 @@ p {
 /* color */
 :root {
   --primary-color: rgb(14, 14, 14);
-  --secondary-color: #787878;
+  --secondary-color: #575757;
 }
 
 /* font */
@@ -93,13 +93,73 @@ p {
 }
 
 .gray {
-  color: #787878;
+  color: var(--secondary-color);
 }
 
 
+/* container */
+.container-regular {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container-paragraph {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* heading */
+.heading-1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.heading-2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.heading-3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.heading-6 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  color: var(--primary-color);
+
+}
 
 
+/* text */
+.paragraph-bold {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: var(--primary-color);
+}
 
+.paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  line-height: 1.5;
+
+}
 
 
 

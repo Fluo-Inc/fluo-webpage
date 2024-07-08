@@ -11,10 +11,9 @@ import Stats from '../components/Stats';
 
 
 const homeTitleOptions = [
-    "Residential Parking",
-    "Guest Parking",
-    "Residents Access",
     "Gargage Patrol",
+    "Incident Investigation",
+    "Security Compliance"
 ];
 
 
@@ -78,7 +77,7 @@ const Home = () => {
                     </div>
                     <div className="home-title-description">
                         Streamline and scale your 
-                        <span className='primary'> apartment parking operations </span>
+                        <span className='primary'> property security investigation and compliance </span>
                         with Fluo AI-powered solution
                     </div>
                     {/* signup field
@@ -100,7 +99,7 @@ const Home = () => {
 
             {/* home stats */}
             <div className="home-stats">
-                <Stats />
+                {/* <Stats /> */}
             </div>
 
             {/* home slogan */}

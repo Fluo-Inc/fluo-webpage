@@ -20,7 +20,7 @@ const Stats = () => {
                     35%
                 </div>
                 <div className="stats-item-description">
-                    Cost savings per year
+                    cost savings per year
                 </div>
             </div>
             <div className="stats-item">
@@ -28,7 +28,7 @@ const Stats = () => {
                     85%
                 </div>
                 <div className="stats-item-description">
-                    Time saved on parking tasks
+                    time saved on investigation
                 </div>
             </div>
             <div className="stats-item">
@@ -36,7 +36,7 @@ const Stats = () => {
                     20%
                 </div>
                 <div className="stats-item-description">
-                    Increase in parking revenue
+                    increase in compliance
                 </div>
             </div>
         </div>

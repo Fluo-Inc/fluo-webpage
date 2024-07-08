@@ -12,6 +12,8 @@ import Technology from './pages/Technology';
 import Request from './pages/Request';
 import Detection from './pages/Detection';
 import Analytics from './pages/Analytics';
+import TermOfUse from './pages/TermOfUse';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
               <Route path="/book-demo"  element={<Request />} />
               <Route path="/platform/detection"  element={<Detection />} />
               <Route path="/platform/analytics"  element={<Analytics />} />
+              <Route path="/terms-of-use"  element={<TermOfUse />} />
+              <Route path="/privacy-policy"  element={<PrivacyPolicy />} />
             </Routes>
           </div>
 
